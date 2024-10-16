@@ -632,7 +632,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcabf278ca59c44f5b6349c075b6b193, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
 --- !u!65 &731623436
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -663,7 +662,7 @@ Transform:
   m_GameObject: {fileID: 731623434}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.804, y: 2.0929043, z: 20.43}
+  m_LocalPosition: {x: 21.64, y: 2.0929043, z: 20.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
