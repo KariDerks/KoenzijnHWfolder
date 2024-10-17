@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 54020958}
   - component: {fileID: 54020957}
   - component: {fileID: 54020956}
+  - component: {fileID: 54020961}
   m_Layer: 0
   m_Name: bushokje
   m_TagString: Untagged
@@ -158,7 +159,19 @@ MonoBehaviour:
   cursor: {fileID: 21300000, guid: e9715cc6f015ad4439b371a79b6c7562, type: 3}
   interactFunction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 54020961}
+        m_TargetAssemblyTypeName: Travel, Assembly-CSharp
+        m_MethodName: travelinteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &54020957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -178,8 +191,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.0274478, y: 1, z: 1.0368897}
+  m_Center: {x: 0.002353562, y: 0, z: 0.018444603}
 --- !u!23 &54020958
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -245,6 +258,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &54020961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54020955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9009d41044c8e428ad32dce61e4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelUI: {fileID: 1417305576}
+  koen: {fileID: 975685073}
+  crosshair: {fileID: 2143016623}
 --- !u!1 &406245447
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,6 +311,154 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &434390591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434390592}
+  - component: {fileID: 434390596}
+  - component: {fileID: 434390595}
+  - component: {fileID: 434390594}
+  - component: {fileID: 434390593}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &434390592
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434390591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1417305577}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 1.3660965, y: -83.7887}
+  m_SizeDelta: {x: 640.2549, y: 440.8014}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &434390593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434390591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9009d41044c8e428ad32dce61e4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelUI: {fileID: 1417305576}
+  koen: {fileID: 975685073}
+  crosshair: {fileID: 2143016623}
+--- !u!114 &434390594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434390591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 434390595}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 434390593}
+        m_TargetAssemblyTypeName: Travel, Assembly-CSharp
+        m_MethodName: closetravel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &434390595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434390591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5117621, g: 0.93207544, b: 0.5555282, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &434390596
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434390591}
+  m_CullTransparentMesh: 1
 --- !u!1 &464084920
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +748,7 @@ GameObject:
   - component: {fileID: 800843547}
   - component: {fileID: 800843546}
   - component: {fileID: 800843545}
+  - component: {fileID: 800843548}
   m_Layer: 5
   m_Name: oldwoman
   m_TagString: Untagged
@@ -642,7 +819,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 800843546}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 800843548}
+        m_TargetAssemblyTypeName: Travel, Assembly-CSharp
+        m_MethodName: travelwoman
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &800843546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,6 +870,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800843543}
   m_CullTransparentMesh: 1
+--- !u!114 &800843548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800843543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9009d41044c8e428ad32dce61e4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelUI: {fileID: 1417305576}
+  koen: {fileID: 975685073}
+  crosshair: {fileID: 2143016623}
 --- !u!1 &905543444
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +897,7 @@ GameObject:
   - component: {fileID: 905543448}
   - component: {fileID: 905543447}
   - component: {fileID: 905543446}
+  - component: {fileID: 905543449}
   m_Layer: 5
   m_Name: dorpsplein
   m_TagString: Untagged
@@ -763,7 +968,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 905543447}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 905543449}
+        m_TargetAssemblyTypeName: Travel, Assembly-CSharp
+        m_MethodName: travelmain
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &905543447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -802,6 +1019,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905543444}
   m_CullTransparentMesh: 1
+--- !u!114 &905543449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905543444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9009d41044c8e428ad32dce61e4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelUI: {fileID: 1417305576}
+  koen: {fileID: 975685073}
+  crosshair: {fileID: 2143016623}
 --- !u!1 &975685073
 GameObject:
   m_ObjectHideFlags: 0
@@ -988,6 +1220,7 @@ GameObject:
   - component: {fileID: 1125229001}
   - component: {fileID: 1125229000}
   - component: {fileID: 1125228999}
+  - component: {fileID: 1125229002}
   m_Layer: 5
   m_Name: supermarkt
   m_TagString: Untagged
@@ -1058,7 +1291,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1125229000}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1125229002}
+        m_TargetAssemblyTypeName: Travel, Assembly-CSharp
+        m_MethodName: travelsupermarkt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1125229000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,6 +1342,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125228997}
   m_CullTransparentMesh: 1
+--- !u!114 &1125229002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125228997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b9009d41044c8e428ad32dce61e4361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  travelUI: {fileID: 1417305576}
+  koen: {fileID: 975685073}
+  crosshair: {fileID: 2143016623}
 --- !u!1 &1417305576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,7 +1372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1417305577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1125,6 +1385,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 434390592}
   - {fileID: 1724456331}
   - {fileID: 406245448}
   m_Father: {fileID: 636243818}
@@ -1406,7 +1667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8443f4d607af48e99e986d16a8bb72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseCursor: {fileID: 0}
+  mouseCursor: {fileID: 2143016625}
   interactKey: 101
   maxInteractionDistance: 2
 --- !u!81 &1822420768

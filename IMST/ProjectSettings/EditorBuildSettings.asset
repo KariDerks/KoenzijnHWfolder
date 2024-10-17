@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Koen's House.unity
     guid: 88967279c0ff6494894f366532d723e7
+  - enabled: 1
+    path: Assets/Scenes/oldlady.unity
+    guid: b8f5f6bfe5e69452fa4944346b84ceb9
+  - enabled: 1
+    path: Assets/Scenes/supermarkt.unity
+    guid: 58f1eb850365fd04692c83711281e415
   m_configObjects: {}
