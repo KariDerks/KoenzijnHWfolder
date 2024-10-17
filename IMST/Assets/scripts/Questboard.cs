@@ -7,12 +7,17 @@ public class Questboard : MonoBehaviour
 {
 public GameObject questboard;
 public GameObject koen;
+public PlayerMove playermove;
+public PlayerLook playerlook;
+public CameraLookDetector cameralookdetector;
 
 public void klikquests() {
     questboard.SetActive(true);
     Cursor.visible = true;
-    koen.SetActive(false);
     Cursor.lockState = CursorLockMode.None;
+    playermove.enabled = false;
+    playerlook.enabled = false;
+    cameralookdetector.enabled = false;
 }
 
 }
