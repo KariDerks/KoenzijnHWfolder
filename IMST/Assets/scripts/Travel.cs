@@ -9,21 +9,28 @@ public class Travel : MonoBehaviour
     public GameObject travelUI;
     public GameObject koen;
     public GameObject crosshair;
+    public PlayerMove playermove;
+    public PlayerLook playerlook;
+    public CameraLookDetector cameralookdetector;
 
     public void travelinteract() {
         travelUI.SetActive(true);
         Cursor.visible = true;
-        koen.SetActive(false);
         crosshair.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
+        playermove.enabled = false;
+        playerlook.enabled = false;
+        cameralookdetector.enabled = false;
     }
 
     public void closetravel(){ 
         travelUI.SetActive(false);
-        koen.SetActive(true);
         Cursor.visible = false;
         crosshair.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
+        playermove.enabled = true;
+        playerlook.enabled = true;
+        cameralookdetector.enabled = true;
 
     }
 
@@ -47,6 +54,15 @@ public class Travel : MonoBehaviour
 
     public void travelsupermarkt() {
         SceneManager.LoadScene("supermarkt", LoadSceneMode.Single);
+         travelUI.SetActive(false);
+        koen.SetActive(true);
+        Cursor.visible = false;
+        crosshair.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void travelhome() {
+        SceneManager.LoadScene("outside", LoadSceneMode.Single);
          travelUI.SetActive(false);
         koen.SetActive(true);
         Cursor.visible = false;
